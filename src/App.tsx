@@ -28,8 +28,7 @@ function App() {
   if (currentPage === 'search-results') {
     return (
       <div className="min-h-screen bg-background">
-        <Header />
-        <div className="pt-20">
+        <div className="pt-4">
           <CarSearchResults onBack={navigateToHome} />
         </div>
       </div>
@@ -46,14 +45,32 @@ function App() {
 
   return (
     <div className="App bg-background">
-      <Header onFleetClick={navigateToFleet} onAboutClick={navigateToAbout} />
+      <button
+        onClick={navigateToHome}
+        className="flex items-center space-x-2 text-primary hover:text-secondary transition-colors duration-200 group bg-white px-4 py-2 rounded-lg shadow-md"
+      >
+        <svg
+          className="w-5 h-5 transition-transform duration-200 group-hover:-translate-x-1"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+        </svg>
+        <span className="font-medium">Back to JJ Travels Home</span>
+      </button>
+
       <Hero onNavigateToResults={navigateToSearchResults} />
-      <FleetSection onViewAll={navigateToFleet} />
+      {/* <FleetSection onViewAll={navigateToFleet} /> */}
     </div>
   );
 }
 
 export default App;
+
+
+
+
 
 
 

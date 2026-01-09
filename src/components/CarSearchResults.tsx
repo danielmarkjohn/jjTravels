@@ -113,7 +113,7 @@ const CarSearchResults: React.FC<CarSearchResultsProps> = ({ onBack }) => {
     {
       id: '1',
       name: 'Maruti Swift Dzire',
-      image: 'https://images.unsplash.com/photo-1549924231-f129b911e442?w=300&h=200&fit=crop',
+      image: 'https://img.autocarindia.com/mmv_images/colors/20250704042224_Maruti_Suzuki_Swift_Pearl_Arctic_White_with_Bluish_Black_Roof[1].jpg',
       seatingCapacity: 4,
       minBilling: 1800,
       category: 'ECONOMIC'
@@ -121,39 +121,39 @@ const CarSearchResults: React.FC<CarSearchResultsProps> = ({ onBack }) => {
     {
       id: '2',
       name: 'Toyota Etios',
-      image: 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=300&h=200&fit=crop',
+      image: 'https://img.autocarindia.com/ExtraImages/20111003110855_Toyota-Etios-Diesel-4.jpg',
       seatingCapacity: 4,
       minBilling: 2200,
       category: 'ECONOMIC'
     },
     {
       id: '3',
-      name: 'Innova 7 Seater',
-      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300&h=200&fit=crop',
-      seatingCapacity: 7,
+      name: 'Benz E Class',
+      image: 'https://stimg.cardekho.com/images/carexteriorimages/630x420/Mercedes-Benz/E-Class/9790/1763471140336/front-left-side-47.jpg',
+      seatingCapacity: 5,
       minBilling: 2800,
-      category: 'SUV / FAMILY'
+      category: 'PREMIUM'
     },
     {
       id: '4',
       name: 'Innova Crysta',
-      image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=200&fit=crop',
+      image: 'https://static3.toyotabharat.com/images/showroom/innova-mmc/unrivaled-upgrades-banner1600x1000.jpg',
       seatingCapacity: 7,
       minBilling: 3200,
       category: 'SUV / FAMILY'
     },
     {
       id: '5',
-      name: 'Honda City',
-      image: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=300&h=200&fit=crop',
-      seatingCapacity: 4,
+      name: 'Totya Velfire',
+      image: 'https://images.overdrive.in/wp-content/uploads/2023/06/Untitled-design-2023-06-21T150753.280.png',
+      seatingCapacity: 7,
       minBilling: 3500,
       category: 'PREMIUM'
     },
     {
       id: '6',
       name: 'Innova Hycross',
-      image: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=300&h=200&fit=crop',
+      image: 'https://sm.mashable.com/t/mashable_in/photo/default/toyota_nh92.1248.jpg',
       seatingCapacity: 6,
       minBilling: 4300,
       category: 'SUV / FAMILY'

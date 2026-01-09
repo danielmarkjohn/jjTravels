@@ -3,9 +3,10 @@ import React, { useState, useEffect } from 'react';
 interface HeaderProps {
   onFleetClick?: () => void;
   onAboutClick?: () => void;
+  onHomeClick?: () => void;
 }
 
-const Header: React.FC<HeaderProps> = ({ onFleetClick, onAboutClick }) => {
+const Header: React.FC<HeaderProps> = ({ onFleetClick, onAboutClick, onHomeClick }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -22,7 +23,10 @@ const Header: React.FC<HeaderProps> = ({ onFleetClick, onAboutClick }) => {
   };
 
   const handleNavClick = (item: string) => {
-    if (item === 'Fleet' && onFleetClick) {
+    if (item === 'Home' && onHomeClick) {
+      onHomeClick();
+      setIsMobileMenuOpen(false);
+    } else if (item === 'Fleet' && onFleetClick) {
       onFleetClick();
       setIsMobileMenuOpen(false);
     } else if (item === 'About' && onAboutClick) {
@@ -158,6 +162,8 @@ const Header: React.FC<HeaderProps> = ({ onFleetClick, onAboutClick }) => {
 };
 
 export default Header;
+
+
 
 
 
