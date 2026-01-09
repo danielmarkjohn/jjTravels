@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-background text-neutral;
+}
+
+/* Custom component styles using new palette */
+.btn-primary {
+  @apply bg-primary hover:bg-secondary text-surface;
+}
+
+.btn-accent {
+  @apply bg-accent hover:bg-accent/90 text-neutral;
+}
